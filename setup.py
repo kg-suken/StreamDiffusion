@@ -7,17 +7,16 @@ from setuptools import find_packages, setup
 _deps = [
     "torch",
     "xformers",
-    "diffusers==0.24.0",
+    "diffusers",
     "transformers",
     "accelerate",
     "fire",
     "omegaconf",
     "cuda-python",
-    "onnx==1.15.0",
-    "onnxruntime==1.16.3",
-    "protobuf==3.20.2",
-    "colored",
-    "pywin32;sys_platform == 'win32'"
+    "onnx",
+    "onnxruntime",
+    "protobuf",
+    "colored"
 ]
 
 deps = {b: a for a, b in (re.findall(r"^(([^!=<>~]+)(?:[!=<>~].*)?$)", x)[0] for x in _deps)}
